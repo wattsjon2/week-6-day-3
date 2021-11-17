@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/main.js" defer></script>
+<title>Racer API</title>
+</head>
+<body>
+    <h1>F1 Standings</h1>
+    <form name="testData" id="testDataForm">
+        <label for="year">Year</label>
+        <input type="text" name="year" id="year">
+
+        <label for="round">Round</label>
+        <input type="text" name="round" id="round">
+
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <table class="table driver-list">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Position</th>
+                            <th>Name</th>
+                            <th>Nationality</th>
+                            <th>Manufacturer</th>
+                            <th>Points</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <th></th>
+                        <th id = pos0>Position</th>
+                        <th id = name0>Name</th>
+                        <th id = nat0>Nationality</th>
+                        <th id = man0>Manufacturer</th>
+                        <th id = points0>points</th>
+                    </tr>
+                    <tbody>
+
+                    </tbody>    
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -18,20 +18,20 @@ const loadData = async (year, round) => {
     
     let th = 5
     for (let i = 0; i < 7; i++){
-    let first_name = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.givenName
-    let last_name = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.familyName
-    let full_name = first_name + " " + last_name
-    let nat = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.nationality
-    let man = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Constructors[0].constructorId
-    let point = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].points
-    let pos = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position
+        let first_name = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.givenName
+        let last_name = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.familyName
+        let full_name = first_name + " " + last_name
+        let nat = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Driver.nationality
+        let man = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].Constructors[0].constructorId
+        let point = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].points
+        let pos = driverList.MRData.StandingsTable.StandingsLists[0].DriverStandings[i].position
 
-    document.getElementsByTagName('th')[th].innerHTML = full_name
-    document.getElementsByTagName('th')[th + 1].innerHTML = pos
-    document.getElementsByTagName('th')[th + 2].innerHTML = nat
-    document.getElementsByTagName('th')[th + 3].innerHTML = man
-    document.getElementsByTagName('th')[th + 4].innerHTML = point
-    th = th + 5
+        document.getElementsByTagName('th')[th].innerHTML = full_name
+        document.getElementsByTagName('th')[th + 1].innerHTML = pos
+        document.getElementsByTagName('th')[th + 2].innerHTML = nat
+        document.getElementsByTagName('th')[th + 3].innerHTML = man
+        document.getElementsByTagName('th')[th + 4].innerHTML = point
+        th = th + 5
     }
 
 }
@@ -54,4 +54,5 @@ form.addEventListener('submit',( event ) => {
     let round = event.path[0][1].value
     console.log(`This came from the query selector: ${year} ${round}`)
     loadData(year, round)
+    
 })
